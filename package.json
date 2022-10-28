@@ -6,8 +6,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "npx hardhat test",
-    "server": "node --loader ts-node/esm src/Server.mts"
+    "test": "npx hardhat test"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.197.0",
