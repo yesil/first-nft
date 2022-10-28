@@ -16,12 +16,6 @@ pnpm install
 
 # To start the web-app:
 pnpm run dev
-
-# To start the REST server:
-pnpm run server
-
-# To test the NFT contract
-pnpm test
 ```
 
 ##
