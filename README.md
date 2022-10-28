@@ -1,32 +1,28 @@
 # Create your first NFT project
 
-This is a project template that provides:
+This is a sample NFT project that contains:
 
  - A Solidity based NFT contract
  - A Mocha test for the contract
  - A React+Typescript based mini web application to list and mint NFTs
+ - A Rest endpoint to retrieve NFT metadata
 
 
 ```
-git 
+npm install
+# or 
+pnpm install
+
+
+# To start the web-app:
+pnpm run dev
+
+# To start the REST server:
+pnpm run server
+
+# To test the NFT contract
+pnpm test
 ```
-
-Go to Contracts Wizard on OpenZepplin:
-
-https://docs.openzeppelin.com/contracts/4.x/wizard
-
-# Customize the NFT contract
-
-Open in Remix
-
-Deploy
-
-## testing contract
-https://hardhat.org/tutorial/testing-contracts
-
-
-Chikn Contract:
-https://snowtrace.io/address/0xab592d197acc575d16c3346f4eb70c703f308d1e#readContract
 
 ##
 AWS/Filebase:

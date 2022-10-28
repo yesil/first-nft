@@ -27,14 +27,6 @@ app.get("/assets", (req, res) => {
             .send(
               new HeadObjectCommand({
                 Bucket: bucket,
-                Key: nft.Key?.replace(".json", ".png"),
-              })
-            )
-            .then((value) => value?.Metadata?.cid),
-          client
-            .send(
-              new HeadObjectCommand({
-                Bucket: bucket,
                 Key: nft.Key,
               })
             )
@@ -47,8 +39,7 @@ app.get("/assets", (req, res) => {
               })
             )
             .then((value) => value?.Body?.transformToString()),
-        ]).then(([imageCid, metadataCid, metadata]) => ({
-          imageCid,
+        ]).then(([metadataCid, metadata]) => ({
           metadataCid,
           metadata: JSON.parse(metadata || ""),
         }))
