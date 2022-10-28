@@ -17,3 +17,6 @@ pnpm install
 # To start the web-app:
 pnpm run dev
 ```
+
+## Solidity
+https://docs.soliditylang.org/en/v0.8.17/
