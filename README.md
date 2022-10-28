@@ -17,16 +17,8 @@ pnpm install
 # To start the web-app:
 pnpm run dev
 
-# To start the REST server:
-pnpm run server
-
 # To test the NFT contract
 pnpm test
 ```
-
-##
-AWS/Filebase:
-~/.aws/credentials
-
 ## Solidity
 https://docs.soliditylang.org/en/v0.8.17/
