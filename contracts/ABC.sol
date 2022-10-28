@@ -10,15 +10,11 @@ contract ABCNFT2 is ERC721, ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
 
     Counters.Counter private _tokenIdCounter;
-    uint public constant MAX_NFT_SUPPLY = 3;
-    mapping(string => bool) mints;
 
     constructor() ERC721("ABC NFT 3", "ABC") {}
 
     function safeMint(string memory uri) public {
         uint256 tokenId = _tokenIdCounter.current();
-        require(tokenId < MAX_NFT_SUPPLY, "Max NFT supply reached");
-        require(!mints[uri], "This NFT has been already minted");
         _tokenIdCounter.increment();
         _safeMint(msg.sender, tokenId);
         _setTokenURI(tokenId, uri);
